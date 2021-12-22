@@ -41,5 +41,6 @@ module Messages
       g.helper          false
       g.stylesheets     false
       g.javascript      false
+    end
   end
 end
