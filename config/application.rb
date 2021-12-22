@@ -33,6 +33,13 @@ module Messages
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    config.generators do |g|
+      g.org             :active_record
+      g.template_engine :slim
+      g.system_tests    nil
+      g.test_framework  nil
+      g.helper          false
+      g.stylesheets     false
+      g.javascript      false
   end
 end
